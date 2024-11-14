@@ -35,6 +35,7 @@ Configuration variables
 - **format** (**Required**): The format that the image is encoded with.
 
   - ``PNG``: The image on the server is encoded in PNG format.
+- **http_request_headers** (*Optional*, mapping): Map of HTTP headers. Values are :ref:`templatable <config-templatable>`. Return {} if the header should not be set.
 - **resize** (*Optional*, string): If set, this will resize the image to fit inside the given dimensions ``WIDTHxHEIGHT``
   and preserve the aspect ratio.
 - **placeholder** (**Optional**, :ref:`config-id`): ID of an :doc:`Image </components/image>` to display while the downloaded image is not yet ready.
